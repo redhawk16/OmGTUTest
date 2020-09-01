@@ -74,7 +74,8 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     @Override
     public void openStatement(Class<?> activity, Bundle bundle) {
         Intent intent = new Intent(this, activity);
-        startActivity(intent, bundle);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 
     @Override

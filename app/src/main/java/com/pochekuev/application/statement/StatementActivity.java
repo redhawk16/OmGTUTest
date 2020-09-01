@@ -1,5 +1,6 @@
 package com.pochekuev.application.statement;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -19,6 +20,12 @@ public class StatementActivity extends AppCompatActivity implements StatementCon
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statement);
+
+        Bundle bundle = getIntent().getExtras();
+        String nrec = "";
+        if(bundle != null && getIntent().hasExtra("nrec")) {
+            nrec = bundle.getString("nrec");
+        }
 
         presenter = new StatementPresenter();
         presenter.attachView(this);

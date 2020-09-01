@@ -29,7 +29,7 @@ public class MainPresenter extends BasePresenter<MainContract.View> implements M
 
     @Override
     public void onLogoutButtonClicked() {
-        //preferencesManager.removeValue(Variables.FNPP_USER);
+        preferencesManager.removeValue(Variables.FNPP_USER);
 
         getView().logoutAccount(LoginActivity.class);
     }
