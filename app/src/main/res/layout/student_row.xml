@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/student_fio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Фамилия Имя Отчество" />
+
+    <TextView
+        android:id="@+id/record_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/student_fio"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="БИТ-15-1" />
+
+    <TextView
+        android:id="@+id/mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/record_book"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Отлично" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/student_fio"
+        tools:text="rating: 30" />
+
+    <TextView
+        android:id="@+id/rating_sem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/rating"
+        app:layout_constraintTop_toBottomOf="@id/student_fio"
+        tools:text="ratingsem: 60" />
+
+    <TextView
+        android:id="@+id/rating_att"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/rating_sem"
+        app:layout_constraintTop_toBottomOf="@id/student_fio"
+        tools:text="ratingatt: 30" />
+
+    <TextView
+        android:id="@+id/rating_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/rating_att"
+        app:layout_constraintTop_toBottomOf="@id/student_fio"
+        tools:text="ratingres: 90" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

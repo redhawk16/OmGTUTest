@@ -14,7 +14,7 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Activities.SplashScreenActivity"
+            android:name=".splashscreen.SplashScreenActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SplashTheme">
             <intent-filter>
@@ -23,8 +23,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.MainActivity"/>
-        <activity android:name=".Activities.AuthorizationActivity"/>
+        <activity android:name=".main.MainActivity"/>
+        <activity android:name=".login.LoginActivity"/>
+        <activity android:name=".statement.StatementActivity"/>
     </application>
 
 </manifest>
