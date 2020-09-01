@@ -202,6 +202,14 @@ public class Statement {
         return dopStatusList;
     }
 
+    public ArrayList<Student> getListStudents() {
+        return listStudents;
+    }
+
+    public ArrayList<Examiner> getListExaminers() {
+        return listExaminers;
+    }
+
     // Setter Methods
 
     public void setNrec(String nrec) {

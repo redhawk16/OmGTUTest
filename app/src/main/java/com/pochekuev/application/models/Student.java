@@ -59,7 +59,7 @@ public class Student {
 
     @SerializedName("rating")
     @Expose
-    private float rating;
+    private int rating;
 
     @SerializedName("ratingsem")
     @Expose
@@ -167,7 +167,7 @@ public class Student {
         this.percent = percent;
     }
 
-    public float getRating() {
+    public int getRating() {
         return rating;
     }
 
@@ -262,7 +262,7 @@ public class Student {
         this.makrExaminerFio = makrExaminerFio;
     }
 
-    public void setRating(float rating) {
+    public void setRating(int rating) {
         this.rating = rating;
     }
 

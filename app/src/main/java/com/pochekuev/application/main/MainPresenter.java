@@ -36,30 +36,9 @@ public class MainPresenter extends BasePresenter<MainContract.View> implements M
 
     @Override
     public void onStatementClicked(TeacherStatements teacherStatements) {
-        // TODO: new intent to activity with bundle
         Bundle bundle = new Bundle();
         bundle.putString("nrec", teacherStatements.getNrec());
         getView().openStatement(StatementActivity.class, bundle);
-
-/*        HashMap<String, String> map = new HashMap<>();
-        map.put("nrec", teacherStatements.getNrec());
-
-        Call<Statement> call = ApiClient.getInstance()
-                .getJsonApi()
-                .getStatement(map);
-
-        ApiClient.getResponse(call, new OnApiGetResponse<Statement>() {
-            @Override
-            public void onGetResponseSuccessfully(Statement responseData) {
-
-            }
-
-            @Override
-            public void onGetResponseFailed(Throwable error) {
-
-            }
-        });*/
-
     }
 
     @Override
